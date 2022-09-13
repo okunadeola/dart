@@ -4,7 +4,7 @@ const http = require("http");
 const dotenv = require('dotenv');
 
 dotenv.config()
-const stripe = require('stripe')(process.env.secret_key);
+const stripe = require('stripe')("sk_test_51JrmbwAVsqeK8xRi5FXzgZmDC2yxZuY6WtCE7M30nWV8ZVSweUDANe5ImcdY6B9kJuhBdr5a1OJoFq6n90ljybd500ed2rl8Ma");
 
 const app = express();
 const port = process.env.PORT || 3000;
